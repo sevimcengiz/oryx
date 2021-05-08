@@ -1,8 +1,13 @@
 fig:nice-fig
 tab:nice-tab
 prerequisites
-Oryx-MRSI
+intro
+oryx-mrsi
 features
+release
+licencing
+developers
+acknowledgements
 getting-started
 methods
 applications
