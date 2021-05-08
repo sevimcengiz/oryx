@@ -1,6 +1,6 @@
 --- 
 title: "Oryx-MRSI Documentation"
-author: "Sevim Cengiz"
+author: "Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
