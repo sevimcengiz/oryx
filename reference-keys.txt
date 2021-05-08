@@ -1,8 +1,9 @@
 fig:nice-fig
 tab:nice-tab
 prerequisites
-intro
-literature
+Oryx-MRSI
+features
+getting-started
 methods
 applications
 example-one
