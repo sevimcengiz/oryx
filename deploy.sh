@@ -3,8 +3,8 @@
 set -e
 
 git checkout gh-pages
-mv book/* .
-rmdir book
+cp -R book/* .
+rm -Rf book
 git add --all *
 git commit -m "Update the book"
 git push
