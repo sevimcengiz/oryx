@@ -9,10 +9,24 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "Oryx-MRSI Documentation"
 ---
 
 # Prerequisites
+
+- [MATLAB R2020b](https://www.fil.ion.ucl.ac.uk/spm/software/download/)
+
+- [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL) for FLIRT 
+
+- [SPM12](https://www.fil.ion.ucl.ac.uk/spm/software/download/)
+
+- [GUI Layout Toolbox](https://www.mathworks.com/matlabcentral/fileexchange/47982-gui-layout-toolbox)
+
+- [Widgets Toolbox](https://www.mathworks.com/matlabcentral/fileexchange/66235-widgets-toolbox-compatibility-support)
+
+- **Oryx-MRSI** is tested on MAC (2.9 GHz Quad-Core Intel Core i7, 16 GB 2133 MHz LPDDR3, Radeon Pro 560 4 GB
+Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU @3.8GHzx16, Graphics GeForce RTX 2070/PCle/SSE2)
+
 
 This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
 
