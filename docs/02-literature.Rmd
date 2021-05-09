@@ -1,3 +1,6 @@
 # Literature
 
-Here is a review of existing methods.
+This is the user documentation for Oryx-MRSI, the fully-automated open-source software for post-processing and clinic analysis of in-vivo multi-slice magnetic resonance spectroscopic imaging (MRSI). It doesn’t require high MRS experience from the user. Oryx-MRSI uses 1H-MRSI data acquired from Philips MR Scanner and anatomical images of different Magnetic Resonance Image (MRI) modalities including (T1 weighted MRI (T1w-MRI), T2 weighted MRI (T2w-MRI). Example datasets included .sdat & .spar of MRSI, and T1w-MRI and T2w-MRI were shared in Github repository (1 control, 1 parkinson’s disease, 4 different phantom acquisition trials for chemical shift). If you want to use this toolbox with your own data set, kindly check the last page to see data structure. 
+
+
+
