@@ -4,6 +4,10 @@
 
 Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data. 
 
+!["Tony!"](assets/Tony.jpg){width=50%}
+
+!["Tony, Tony!"](assets/Tony2.jpg){width=50%}
+
 ## Release 
 
 Version 1.0
