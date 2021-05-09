@@ -5,20 +5,20 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Oryx-MRSI Documentation</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="description" content="Oryx-MRSI Documentation" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Oryx-MRSI Documentation" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="Oryx-MRSI Documentation" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Oryx-MRSI Documentation" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="Oryx-MRSI Documentation" />
   
 
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
@@ -120,28 +120,6 @@ code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<style type="text/css">
-/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}
-</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -160,7 +138,14 @@ div.csl-indent {
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
-<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#oryx-mrsi"><i class="fa fa-check"></i><b>2.1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#release"><i class="fa fa-check"></i><b>2.2</b> Release</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#licencing"><i class="fa fa-check"></i><b>2.3</b> Licencing</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#developers"><i class="fa fa-check"></i><b>2.4</b> Developers</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#acknowledgements"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
+</ul></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
@@ -197,6 +182,15 @@ div.csl-indent {
 </div>
 <div id="prerequisites" class="section level1" number="1">
 <h1><span class="header-section-number">Chapter 1</span> Prerequisites</h1>
+<ul>
+<li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">MATLAB R2020b</a></p></li>
+<li><p><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL">FSL</a> for FLIRT</p></li>
+<li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">SPM12</a></p></li>
+<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/47982-gui-layout-toolbox">GUI Layout Toolbox</a></p></li>
+<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/66235-widgets-toolbox-compatibility-support">Widgets Toolbox</a></p></li>
+<li><p><strong>Oryx-MRSI</strong> is tested on MAC (2.9 GHz Quad-Core Intel Core i7, 16 GB 2133 MHz LPDDR3, Radeon Pro 560 4 GB
+Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU <span class="citation">(<a href="#ref-3.8GHzx16" role="doc-biblioref"><strong>3.8GHzx16?</strong></a>)</span>, Graphics GeForce RTX 2070/PCle/SSE2)</p></li>
+</ul>
 <p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
 <p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)</span>

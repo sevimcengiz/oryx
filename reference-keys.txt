@@ -1,7 +1,10 @@
-fig:nice-fig
-tab:nice-tab
 prerequisites
 intro
+oryx-mrsi
+release
+licencing
+developers
+acknowledgements
 literature
 methods
 applications
