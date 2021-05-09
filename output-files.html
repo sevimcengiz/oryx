@@ -4,21 +4,21 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Oryx-MRSI Documentation</title>
-  <meta name="description" content="Oryx-MRSI Documentation" />
+  <title>Chapter 5 Output Files | Oryx-MRSI Documentation</title>
+  <meta name="description" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Oryx-MRSI Documentation" />
+  <meta property="og:title" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   <meta property="og:type" content="book" />
   
   
-  <meta property="og:description" content="Oryx-MRSI Documentation" />
+  <meta property="og:description" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Oryx-MRSI Documentation" />
+  <meta name="twitter:title" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   
-  <meta name="twitter:description" content="Oryx-MRSI Documentation" />
+  <meta name="twitter:description" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   
 
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="oryx-mrsi-gui-tutorial.html"/>
 
-<link rel="next" href="intro.html"/>
 <script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -122,25 +122,14 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Oryx-MRSI Documentation</h1>
-<p class="author"><em>Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik</em></p>
-<p class="date" style="margin-top: 1.5em;"><em>2021-05-09</em></p>
-</div>
-<div id="oryx-mrsi" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Oryx-MRSI</h1>
-<p>Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data.</p>
-<p><img src="assets/logo.png" style="width:15.0%" /></p>
-<p><strong>Prerequirements</strong></p>
-<ul>
-<li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">MATLAB R2020b</a></p></li>
-<li><p><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL">FSL</a> for FLIRT</p></li>
-<li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">SPM12</a></p></li>
-<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/47982-gui-layout-toolbox">GUI Layout Toolbox</a></p></li>
-<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/66235-widgets-toolbox-compatibility-support">Widgets Toolbox</a></p></li>
-<li><p><strong>Oryx-MRSI</strong> is tested on MAC (2.9 GHz Quad-Core Intel Core i7, 16 GB 2133 MHz LPDDR3, Radeon Pro 560 4 GB
-Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU <span class="citation">(<a href="#ref-3.8GHzx16" role="doc-biblioref"><strong>3.8GHzx16?</strong></a>)</span>, Graphics GeForce RTX 2070/PCle/SSE2)</p></li>
-</ul>
+<div id="output-files" class="section level1" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Output Files</h1>
+<p>A folder named <code>nifti</code> will be created after the analysis.</p>
+<p>It includes all spectral volumes.</p>
+<p><img src="assets/folders.png" style="width:40.0%" /></p>
+<p><strong>FSLeyes</strong> <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes">link</a> is suggested for nifti file visualization.</p>
+<p>A folder named <code>outputs</code> will include all excell files after ROI Analysis.</p>
+<p><img src="assets/excels.png" style="width:60.0%" /></p>
 
 </div>
             </section>
@@ -148,8 +137,8 @@ Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor 
           </div>
         </div>
       </div>
+<a href="oryx-mrsi-gui-tutorial.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="intro.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -181,7 +170,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/index.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-summary.Rmd",
 "text": "Edit"
 },
 "history": {

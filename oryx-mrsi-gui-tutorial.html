@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 4 Oryx-MRSI GUI Tutorial | Oryx-MRSI Documentation</title>
+  <meta name="description" content="Chapter 4 Oryx-MRSI GUI Tutorial | Oryx-MRSI Documentation" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 4 Oryx-MRSI GUI Tutorial | Oryx-MRSI Documentation" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Chapter 4 Oryx-MRSI GUI Tutorial | Oryx-MRSI Documentation" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 4 Oryx-MRSI GUI Tutorial | Oryx-MRSI Documentation" />
+  
+  <meta name="twitter:description" content="Chapter 4 Oryx-MRSI GUI Tutorial | Oryx-MRSI Documentation" />
+  
+
+<meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
+
+
+<meta name="date" content="2021-05-09" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="getting-started.html"/>
+<link rel="next" href="output-files.html"/>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Oryx-MRSI Documentation</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#oryx-mrsi-1"><i class="fa fa-check"></i><b>2.1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#release"><i class="fa fa-check"></i><b>2.2</b> Release</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#licencing"><i class="fa fa-check"></i><b>2.3</b> Licencing</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#developers"><i class="fa fa-check"></i><b>2.4</b> Developers</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#acknowledgements"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>3</b> Getting started</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="getting-started.html"><a href="getting-started.html#requirements"><i class="fa fa-check"></i><b>3.1</b> Requirements</a></li>
+<li class="chapter" data-level="3.2" data-path="getting-started.html"><a href="getting-started.html#install-oryx-mrsi"><i class="fa fa-check"></i><b>3.2</b> Install Oryx-MRSI</a></li>
+<li class="chapter" data-level="3.3" data-path="getting-started.html"><a href="getting-started.html#before-use-oryx-mrsi"><i class="fa fa-check"></i><b>3.3</b> Before Use Oryx-MRSI</a></li>
+<li class="chapter" data-level="3.4" data-path="getting-started.html"><a href="getting-started.html#how-to-organize-your-raw-data"><i class="fa fa-check"></i><b>3.4</b> How to organize your raw data</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html"><i class="fa fa-check"></i><b>4</b> Oryx-MRSI GUI Tutorial</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#starting-oryx-mrsi"><i class="fa fa-check"></i><b>4.1</b> Starting Oryx-MRSI</a></li>
+<li class="chapter" data-level="4.2" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#load-module"><i class="fa fa-check"></i><b>4.2</b> Load Module</a></li>
+<li class="chapter" data-level="4.3" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#co-registration-module"><i class="fa fa-check"></i><b>4.3</b> Co-registration Module</a></li>
+<li class="chapter" data-level="4.4" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#segmentation-module"><i class="fa fa-check"></i><b>4.4</b> Segmentation Module</a></li>
+<li class="chapter" data-level="4.5" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#fwhm-snr-module"><i class="fa fa-check"></i><b>4.5</b> FWHM &amp; SNR Module</a></li>
+<li class="chapter" data-level="4.6" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#spectral-quality-module"><i class="fa fa-check"></i><b>4.6</b> Spectral Quality Module</a></li>
+<li class="chapter" data-level="4.7" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#metabolite-map-module"><i class="fa fa-check"></i><b>4.7</b> Metabolite Map Module</a></li>
+<li class="chapter" data-level="4.8" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#registration-module"><i class="fa fa-check"></i><b>4.8</b> Registration Module</a></li>
+<li class="chapter" data-level="4.9" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#roi-analysis"><i class="fa fa-check"></i><b>4.9</b> ROI Analysis</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="output-files.html"><a href="output-files.html"><i class="fa fa-check"></i><b>5</b> Output Files</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Oryx-MRSI Documentation</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="oryx-mrsi-gui-tutorial" class="section level1" number="4">
+<h1><span class="header-section-number">Chapter 4</span> Oryx-MRSI GUI Tutorial</h1>
+<p>This tutorial describes each step of the Oryx-MRSI analysis using the graphical user interface.
+We will learn how to start the GUI, select the spar file, select requirements information an the Main Gui Page and then Oryx-MRSI will enable us to use 8 different modules.</p>
+<div id="starting-oryx-mrsi" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Starting Oryx-MRSI</h2>
+<p>Please, make sure that SPM12 and ORYX-MRSI folders in the addpath with subfolders. (For more information, <a href="https://sevimcengiz.github.io/oryx/#before-use-oryx-mrsi">see this</a>)</p>
+<p>Please, make sure that FSL command can be used via Matlab and run <code>check_fsl_usage_from_matlab.m</code> (For more information, <a href="https://sevimcengiz.github.io/oryx/#before-use-oryx-mrsi">see this</a>)</p>
+<p>Let’s start with <strong>Oryx-MRSI</strong>.</p>
+<p>At the MATLAB prompt, enter</p>
+<pre><code>&gt;&gt;&gt; Oryx
+</code></pre>
+<p>It will display the Oryx-MRSI main Page.</p>
+<p><img src="assets/maingui.png" style="width:100.0%" /></p>
+<p><strong>Selecting data and providing information.</strong></p>
+<p><strong>Click the <code>select .spar file</code> button ,and open dataset folder under Oryx-MRSI repository in your drive.</strong></p>
+<p><img src="assets/selectspar.png" style="width:80.0%" /></p>
+<p><strong>Choose an example dataset or select your own dataset (Please, follow the steps at here <a href="https://sevimcengiz.github.io/oryx/#before-use-oryx-mrsi">link</a>).</strong></p>
+<p><img src="assets/spar.png" style="width:80.0%" /></p>
+<p><strong>Provide information for MRSI acquisition after T1w-MRI or T2w-MRI. </strong></p>
+<p><img src="assets/mrsiacquired.png" style="width:25.0%" /></p>
+<p><strong>Provide information for the chemical shift correction. (Recommended is ON if you have the system RF bandwidths information)</strong></p>
+<p><img src="assets/rfbw.png" style="width:30.0%" /></p>
+<p><strong>If chemical shift correction is on, please provide information shown in the figure.</strong></p>
+<p><img src="assets/chemicalshftcorr.png" style="width:25.0%" /></p>
+<p><strong>Please, select reference metabolite for chemical shift correction.</strong></p>
+<p><img src="assets/refmetab.png" style="width:40.0%" /></p>
+<p><strong>Please, provide cut-off values for automated spectral quality.</strong></p>
+<p><img src="assets/cutexccriter.png" style="width:30.0%" /></p>
+<p><strong>Please, provide cut-off value for the probabilistic binary map after MNI152 brain atlas registration.</strong></p>
+<p><img src="assets/cutprobmap.png" style="width:30.0%" /></p>
+<p><strong>Please, click Done button.</strong></p>
+<pre><code>Done
+</code></pre>
+</div>
+<div id="load-module" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Load Module</h2>
+<p>This module reads the raw 1H-MRSI data, LCModel .coord output files, and allows for a visualization of the spectra.</p>
+<p><img src="assets/rawdata.png" style="width:100.0%" /></p>
+<p><img src="assets/coord.png" style="width:100.0%" /></p>
+<p><strong>Click</strong>, for the magnification of the selected spectra.</p>
+<p><img src="assets/right.png" style="width:100.0%" /></p>
+</div>
+<div id="co-registration-module" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Co-registration Module</h2>
+<p>If chemical shift correction is ON, then the chemical shift misregistration amount is calculated for each metabolite using the selected metabolite as the reference and RF pulse bandwidths for each direction provided on the Main Page. Then, a metabolic map is shifted into its respective location considering the MR image space data order. Afterwards, the field of view (FOV), the PRESS box, and each voxel within the FOV are co-registered onto anatomical MR image for each metabolite map followed by the visualization of the shifted metabolite maps.</p>
+<p><img src="assets/coreg.png" style="width:100.0%" /></p>
+</div>
+<div id="segmentation-module" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Segmentation Module</h2>
+<p>After white matter (WM), gray matter (GM), and cerebrospinal fluid (CSF) are segmented from a T1-weighted MRI using SPM12, the module calculates the WM, GM and CSF fractions (fWM, fGM, and fCSF) in each voxel for every metabolite, which vary due to chemical shift misregistration.Figure shows the fCSF, fWM and fGM maps for a selected metabolite (NAA+NAAG) at one slice. This part might take 30 minutes.</p>
+<p><img src="assets/seg1.png" style="width:100.0%" /></p>
+</div>
+<div id="fwhm-snr-module" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> FWHM &amp; SNR Module</h2>
+<p>This module reads LCModel .table files to get FWHM and SNR values of each voxel to create and visualize multivoxel FWHM and SNR maps.</p>
+<p><img src="assets/fwhm1.png" style="width:100.0%" /></p>
+</div>
+<div id="spectral-quality-module" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Spectral Quality Module</h2>
+<p>This module displays voxels included in the 1H-MRSI data analysis for each metabolite after the FWHM, SNR, CRLB, and fCSF exclusion criteria defined on the Main Page are applied.</p>
+<p><img src="assets/spectralqual.png" style="width:100.0%" /></p>
+</div>
+<div id="metabolite-map-module" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Metabolite Map Module</h2>
+<p>The LCModel .table files are parsed using a text reader and each metabolite result is positioned into a 3D grid in accordance with the MR image space data to create several maps, which are the concentration, CSF corrected concentration <code>(C=C0*(1/(1-fCSF)))</code>, and concentration or CSF corrected concentration to Ins and Cr+PCr ratio maps. Currently, these maps are created for nine different metabolites, which are Cr+PCr, Glu+Gln, GPC+PCh, Ins, Lac, Lip13a, Lip13b, Lip13a+Lip13b.</p>
+<p><img src="assets/metabmap.png" style="width:100.0%" /></p>
+</div>
+<div id="registration-module" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Registration Module</h2>
+<p>This modules registers the reference anatomical MRI onto MNI152 brain atlas using FMRIB’s Linear Image Registration Tool <code>(FSL FLIRT)</code> to obtain a transformation matrix. Then, this transformation matrix is used to register the PRESS box and all the concentration or ratio maps that were previously co-registered to the anatomical MRI onto the MNI152 brain atlas. The user provides a cutoff value for the probabilistic maps, <code>(at the main page)</code>, which are produced as a result of registration, and all the pixels that exceed this threshold are included in the data analysis.</p>
+<p><img src="assets/reg.png" style="width:100.0%" /></p>
+</div>
+<div id="roi-analysis" class="section level2" number="4.9">
+<h2><span class="header-section-number">4.9</span> ROI Analysis</h2>
+<p>The metabolic maps are currently evaluated at different brain regions to define a mean, median and standard deviation value of the concentration map of interest at these brain regions. A result is produced for a parcellation if only more than <code>provided value at the ROI Analyze page</code>% of its pixels are included within the metabolite map of interest.</p>
+<p><img src="assets/roi.png" style="width:100.0%" /></p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="getting-started.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="output-files.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-application.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
