@@ -147,11 +147,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#acknowledgements"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="methods.html"><a href="methods.html#requirements"><i class="fa fa-check"></i><b>4.1</b> Requirements</a></li>
+<li class="chapter" data-level="4.2" data-path="methods.html"><a href="methods.html#install-oryx-mrsi"><i class="fa fa-check"></i><b>4.2</b> Install Oryx-MRSI</a></li>
+<li class="chapter" data-level="4.3" data-path="methods.html"><a href="methods.html#before-use-oryx-mrsi"><i class="fa fa-check"></i><b>4.3</b> Before Use Oryx-MRSI</a></li>
+<li class="chapter" data-level="4.4" data-path="methods.html"><a href="methods.html#how-to-organize-your-raw-data"><i class="fa fa-check"></i><b>4.4</b> How to organize your raw data</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#oryx-mrsi-gui-tutorial"><i class="fa fa-check"></i><b>5.1</b> Oryx-MRSI GUI Tutorial</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#starting-oryx-mrsi"><i class="fa fa-check"></i><b>5.2</b> Starting Oryx-MRSI</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -177,12 +183,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="applications" class="section level1" number="5">
 <h1><span class="header-section-number">Chapter 5</span> Applications</h1>
-<p>Some <em>significant</em> applications are demonstrated in this chapter.</p>
-<div id="example-one" class="section level2" number="5.1">
-<h2><span class="header-section-number">5.1</span> Example one</h2>
+<div id="oryx-mrsi-gui-tutorial" class="section level2" number="5.1">
+<h2><span class="header-section-number">5.1</span> Oryx-MRSI GUI Tutorial</h2>
+<p>This tutorial describes each step of the Oryx-MRSI analysis workflow using the graphical user interface.
+We will learn how to start the GUI, select the spar file, select requirements information an the Main Gui Page and it will enables us to use 8 different modules.</p>
 </div>
-<div id="example-two" class="section level2" number="5.2">
-<h2><span class="header-section-number">5.2</span> Example two</h2>
+<div id="starting-oryx-mrsi" class="section level2" number="5.2">
+<h2><span class="header-section-number">5.2</span> Starting Oryx-MRSI</h2>
+<p>Please, make sure that SPM12 and ORYX-MRSI folders in the addpath with subfolders. (For more information, see this(link))
+Please, make sure that FSL command can be used via Matlab and run <code>check_fsl_usage_from_matlab.m</code> (For more information, see this(link))</p>
+<p>Let’s start with Oryx-MRSI.</p>
+<p>At the MATLAB prompt, enter
+&gt;&gt;&gt; Oryx</p>
+<p>It will display the Oryx-MRSI main Page.</p>
+<p>Selecting data and providing information.</p>
+<p>Click the <code>select .spar file</code> button , open dataset folder under Oryx-MRSI repository in your drive. Choose an example dataset or select your own dataset (Please, follow the steps at here (link)).</p>
+<p>Provide information for MRSI acquisition after T1w-MRI or T2w-MRI.</p>
+<p>Provide information for the chemical shift correction. (Recommended is ON if you have the system RF bandwidths information)</p>
+<p>If chemical shift correction is on, please provide information shown in the figure.</p>
 
 </div>
 </div>

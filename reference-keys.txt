@@ -7,7 +7,11 @@ developers
 acknowledgements
 literature
 methods
+requirements
+install-oryx-mrsi
+before-use-oryx-mrsi
+how-to-organize-your-raw-data
 applications
-example-one
-example-two
+oryx-mrsi-gui-tutorial
+starting-oryx-mrsi
 final-words

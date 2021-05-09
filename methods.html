@@ -147,11 +147,17 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#acknowledgements"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
-<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="methods.html"><a href="methods.html#requirements"><i class="fa fa-check"></i><b>4.1</b> Requirements</a></li>
+<li class="chapter" data-level="4.2" data-path="methods.html"><a href="methods.html#install-oryx-mrsi"><i class="fa fa-check"></i><b>4.2</b> Install Oryx-MRSI</a></li>
+<li class="chapter" data-level="4.3" data-path="methods.html"><a href="methods.html#before-use-oryx-mrsi"><i class="fa fa-check"></i><b>4.3</b> Before Use Oryx-MRSI</a></li>
+<li class="chapter" data-level="4.4" data-path="methods.html"><a href="methods.html#how-to-organize-your-raw-data"><i class="fa fa-check"></i><b>4.4</b> How to organize your raw data</a></li>
+</ul></li>
 <li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a>
 <ul>
-<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
-<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#oryx-mrsi-gui-tutorial"><i class="fa fa-check"></i><b>5.1</b> Oryx-MRSI GUI Tutorial</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#starting-oryx-mrsi"><i class="fa fa-check"></i><b>5.2</b> Starting Oryx-MRSI</a></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
@@ -177,8 +183,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="methods" class="section level1" number="4">
 <h1><span class="header-section-number">Chapter 4</span> Methods</h1>
-<p>We describe our methods in this chapter.</p>
+<div id="requirements" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Requirements</h2>
+<ul>
+<li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">MATLAB R2020b</a></p></li>
+<li><p><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL">FSL</a> for FLIRT</p></li>
+<li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">SPM12</a></p></li>
+<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/47982-gui-layout-toolbox">GUI Layout Toolbox</a></p></li>
+<li><p><a href="https://www.mathworks.com/matlabcentral/fileexchange/66235-widgets-toolbox-compatibility-support">Widgets Toolbox</a></p></li>
+<li><p><strong>Oryx-MRSI</strong> is tested on MAC (2.9 GHz Quad-Core Intel Core i7, 16 GB 2133 MHz LPDDR3, Radeon Pro 560 4 GB
+Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU <span class="citation">(<a href="#ref-3.8GHzx16" role="doc-biblioref"><strong>3.8GHzx16?</strong></a>)</span>, Graphics GeForce RTX 2070/PCle/SSE2)</p></li>
+</ul>
+</div>
+<div id="install-oryx-mrsi" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Install Oryx-MRSI</h2>
+<p><strong>Oryx-MRSI</strong> uses FSL-Flirt function so using FSL from MATLAB should be ready.</p>
+<p>If you want to install FSL into your computer, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation">this link</a></p>
+<p>If you use <code>MAC</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX">this link</a> (Advance Usage part-Using FSL from MATLAB)</p>
+<p>If you use <code>LINUX</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Linux">this link</a> (Using FSL from MATLAB)</p>
+<p>Plase download SPM12 using <a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">this link</a></p>
+<p>Please, check <a href="https://github.com/sevimcengiz/Oryx-MRSI">Oryx-MRSI Github Repository</a>.</p>
+<p>Please, clone the repository, or download. See the figure below.</p>
+</div>
+<div id="before-use-oryx-mrsi" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Before Use Oryx-MRSI</h2>
+<p>Addpath <strong>Oryx-MRSI</strong> with subfolders.</p>
+<p>Addpath <strong>SPM12</strong> with subfolders.</p>
+<p>Please make sure that <strong>FSL</strong> usage from Matlab command window installation is completed properly.</p>
+<p>Before running a data analysis using <strong>Oryx-MRSI</strong>, let’s check that FSL usage is from Matlab is done.</p>
+<p>Please open matlab and run <code>check_fsl_usage_from_matlab.m</code> script which is given under <strong>Oryx-MRSI</strong> Github repo.</p>
+<p>If there is no error, FSL usage from Matlab is completely installed.</p>
+<p>If you get an error, plese check these:</p>
+<p>If you use <code>MAC</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX">this link</a> (Advance Usage part-Using FSL from MATLAB)</p>
+<p>If you use <code>LINUX</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Linux">this link</a> (Using FSL from MATLAB)</p>
+</div>
+<div id="how-to-organize-your-raw-data" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> How to organize your raw data</h2>
+<p>If you want to go through with your own data set, the folder of data structure given below will help you.</p>
+<p>There is a <code>dataset</code> folder under <strong>Oryx-MRSI</strong>.</p>
+<p>Each patient should be listed under that folder.</p>
+<p>Each patient should have T1w-MRI, T2w-MRI or both.<br />
+If you have T1w-MRI,
+~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T1/nifti/ PatientName_Bet.nii.gz</p>
+<p>If you have T2w-MRI,
+~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T2/nifti/ PatientName_Bet.nii.gz</p>
+<p>You need .sdat&amp;.spar data and LCModel outputs.</p>
+<p>For spectra,
+~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.sdat
+~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.spar
+~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.sdat
+~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.spar</p>
+<p>For LCModel outputs at press_1;
+~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/lcmodel_outputs/PatientName_press_1_raw_act/</p>
+<p>Each folder has to have .coord and .table files. They need to be named as;
+PatientName_press_1_raw_act_sl1_4-7.coord (It shows slice 1, row 4, column 7)
+PatientName_press_1_raw_act_sl1_4-7.table (It shows slice 1, row 4, column 7)</p>
 
+</div>
 </div>
             </section>
 
