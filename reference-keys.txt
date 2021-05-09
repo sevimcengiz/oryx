@@ -1,8 +1,9 @@
 fig:nice-fig
 tab:nice-tab
-features
+prerequisites
 intro
 oryx-mrsi
+features
 release
 licencing
 developers
