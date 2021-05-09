@@ -24,7 +24,7 @@
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
 
 
-<meta name="date" content="2021-05-09" />
+<meta name="date" content="2021-05-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -126,8 +126,40 @@
 <h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
 <div id="oryx-mrsi-1" class="section level2" number="2.1">
 <h2><span class="header-section-number">2.1</span> Oryx-MRSI</h2>
-<p>Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data.</p>
 <p><img src="assets/logo.png" style="width:15.0%" /></p>
+<p>Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data. Oryx-MRSI functionality includes chemical shift correction, segmentation, tissue fraction calculation, metabolite maps generation, registration of metabolite maps onto MNI152 brain atlas, and ROI analysis for metabolite concentration and ratio estimation at different brain parcellations.</p>
+<p><a href="https://github.com/sevimcengiz/Oryx-MRSI">Oryx-MRSI Github Repository Link</a></p>
+<p>Oryx-MRSI was programmed in MATLAB 2020a (The Mathworks Inc., Natick, MA).The software asks for some parameters before the data analysis.The user needs to provide parameters for the multi-slice 1H-MRSI data.</p>
+<p>Required parameters:</p>
+<ol style="list-style-type: lower-alpha">
+<li><p>Exclusion criteria for fCSF, SNR, FWHM, CRLB</p></li>
+<li><p>RF bandwidhth of the system for chemical shift correction</p></li>
+<li><p>Cut-off value for the probabilistic binary map after registration</p></li>
+<li><p>Chemical shift correction is <code>On</code> or <code>Off</code></p></li>
+<li><p>RFOV dir is <code>RL</code> or <code>AP</code></p></li>
+<li><p>Chemical shift dir (AP) is <code>A</code> or <code>P</code></p></li>
+<li><p>Chemical shift dir (LR) is <code>L</code> or <code>R</code></p></li>
+<li><p>Chemical shift dir (FH) is <code>F</code> or <code>H</code></p></li>
+<li><p>Reference metabolite</p></li>
+</ol>
+<ul>
+<li><p><code>Load Data</code> Reads the raw 1H-MRSI data and LCModel .coord otput files for raw data and Coord file visualization of spectra.</p></li>
+<li><p><code>Co-registration</code> Coregisters FOV,Press-Box(VOI), all voxels of spectra considering chemical shift correction if chemical shift correction is ‘On.’</p></li>
+<li><p><code>Segmentation</code> Calculation of WM, GM, CSF fractions in each voxel of all metabolites considering chemical shift correction.</p></li>
+<li><p><code>FWHM-SNR</code> Visualization of FWHM and SNR values for all voxels.</p></li>
+<li><p><code>Spectral Quality</code> Visualization of included voxels into the 1H-MRSI data analysis after exclusion criteria values considering FWHM, SNR, CRLB, and fCSF.</p></li>
+<li><p><code>Metabolite Map</code> All metabolite results are used to create metabolite maps including:</p>
+<ul>
+<li>concentration map,</li>
+<li>concentration map to Ins ratio,</li>
+<li>concentration map to Cr+PCr ratio,</li>
+<li>CSF corrected concentration map,</li>
+<li>CSF corrected concentration map to Ins ratio,</li>
+<li>CSF corrected concentration map to Cr+PCr ratio.</li>
+</ul></li>
+<li><p><code>Registration</code> Generates MNI152 brain atlas-Registered metabolite maps including the outputs created in the previous module.</p></li>
+<li><p><code>ROI Analysis</code> Region of interest (ROI) analysis at multiple brain atlases like <a href="https://pubmed.ncbi.nlm.nih.gov/28981612/">Schafer2018 100/400 Parcels on 7 resting-state (rs-fMRI) networks</a> or <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases">MNI thr 0/25/50 brain regions</a>.</p></li>
+</ul>
 </div>
 <div id="release" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Release</h2>
@@ -135,7 +167,7 @@
 </div>
 <div id="licencing" class="section level2" number="2.3">
 <h2><span class="header-section-number">2.3</span> Licencing</h2>
-<p>Apache-2.0 License</p>
+<p>MIT License</p>
 </div>
 <div id="developers" class="section level2" number="2.4">
 <h2><span class="header-section-number">2.4</span> Developers</h2>
