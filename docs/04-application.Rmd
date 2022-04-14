@@ -19,7 +19,7 @@ It will display the Oryx-MRSI main Page.
 
 Selecting data and providing information. 
 
-Click the ```select .spar or MRS-NIfTI file``` button , open dataset folder under Oryx-MRSI repository in your drive. Choose an example dataset or select your own dataset (Please, follow the steps at here (link)).
+Click the ```select Spar or MRS-NIfTI file``` button , open dataset folder under Oryx-MRSI repository in your drive. Choose an example dataset or select your own dataset (Please, follow the steps at here (link)).
 
 Provide information for MRSI acquisition after T1w-MRI or T2w-MRI. 
 
