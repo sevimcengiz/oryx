@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 2 Introduction | Oryx-MRSI Documentation</title>
   <meta name="description" content="Chapter 2 Introduction | Oryx-MRSI Documentation" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 2 Introduction | Oryx-MRSI Documentation" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 2 Introduction | Oryx-MRSI Documentation" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
 
 
-<meta name="date" content="2021-05-10" />
+<meta name="date" content="2022-04-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,9 +31,9 @@
   
   
 <link rel="prev" href="index.html"/>
-<link rel="next" href="getting-started.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="methods.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,11 +49,75 @@
 
 
 
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
-
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -73,35 +136,28 @@
 <li><a href="./">Oryx-MRSI Documentation</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#oryx-mrsi-1"><i class="fa fa-check"></i><b>2.1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#oryx-mrsi"><i class="fa fa-check"></i><b>2.1</b> Oryx-MRSI</a></li>
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#release"><i class="fa fa-check"></i><b>2.2</b> Release</a></li>
 <li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#licencing"><i class="fa fa-check"></i><b>2.3</b> Licencing</a></li>
 <li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#developers"><i class="fa fa-check"></i><b>2.4</b> Developers</a></li>
 <li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#acknowledgements"><i class="fa fa-check"></i><b>2.5</b> Acknowledgements</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="getting-started.html"><a href="getting-started.html"><i class="fa fa-check"></i><b>3</b> Getting started</a>
+<li class="chapter" data-level="3" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>3</b> Methods</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="getting-started.html"><a href="getting-started.html#requirements"><i class="fa fa-check"></i><b>3.1</b> Requirements</a></li>
-<li class="chapter" data-level="3.2" data-path="getting-started.html"><a href="getting-started.html#install-oryx-mrsi"><i class="fa fa-check"></i><b>3.2</b> Install Oryx-MRSI</a></li>
-<li class="chapter" data-level="3.3" data-path="getting-started.html"><a href="getting-started.html#before-use-oryx-mrsi"><i class="fa fa-check"></i><b>3.3</b> Before Use Oryx-MRSI</a></li>
-<li class="chapter" data-level="3.4" data-path="getting-started.html"><a href="getting-started.html#how-to-organize-your-raw-data"><i class="fa fa-check"></i><b>3.4</b> How to organize your raw data</a></li>
+<li class="chapter" data-level="3.1" data-path="methods.html"><a href="methods.html#requirements"><i class="fa fa-check"></i><b>3.1</b> Requirements</a></li>
+<li class="chapter" data-level="3.2" data-path="methods.html"><a href="methods.html#install-oryx-mrsi"><i class="fa fa-check"></i><b>3.2</b> Install Oryx-MRSI</a></li>
+<li class="chapter" data-level="3.3" data-path="methods.html"><a href="methods.html#before-use-oryx-mrsi"><i class="fa fa-check"></i><b>3.3</b> Before Use Oryx-MRSI</a></li>
+<li class="chapter" data-level="3.4" data-path="methods.html"><a href="methods.html#how-to-organize-your-raw-data"><i class="fa fa-check"></i><b>3.4</b> How to organize your raw data</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html"><i class="fa fa-check"></i><b>4</b> Oryx-MRSI GUI Tutorial</a>
+<li class="chapter" data-level="4" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>4</b> Applications</a>
 <ul>
-<li class="chapter" data-level="4.1" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#starting-oryx-mrsi"><i class="fa fa-check"></i><b>4.1</b> Starting Oryx-MRSI</a></li>
-<li class="chapter" data-level="4.2" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#load-module"><i class="fa fa-check"></i><b>4.2</b> Load Module</a></li>
-<li class="chapter" data-level="4.3" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#co-registration-module"><i class="fa fa-check"></i><b>4.3</b> Co-registration Module</a></li>
-<li class="chapter" data-level="4.4" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#segmentation-module"><i class="fa fa-check"></i><b>4.4</b> Segmentation Module</a></li>
-<li class="chapter" data-level="4.5" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#fwhm-snr-module"><i class="fa fa-check"></i><b>4.5</b> FWHM &amp; SNR Module</a></li>
-<li class="chapter" data-level="4.6" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#spectral-quality-module"><i class="fa fa-check"></i><b>4.6</b> Spectral Quality Module</a></li>
-<li class="chapter" data-level="4.7" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#metabolite-map-module"><i class="fa fa-check"></i><b>4.7</b> Metabolite Map Module</a></li>
-<li class="chapter" data-level="4.8" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#registration-module"><i class="fa fa-check"></i><b>4.8</b> Registration Module</a></li>
-<li class="chapter" data-level="4.9" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#roi-analysis"><i class="fa fa-check"></i><b>4.9</b> ROI Analysis</a></li>
+<li class="chapter" data-level="4.1" data-path="applications.html"><a href="applications.html#oryx-mrsi-gui-tutorial"><i class="fa fa-check"></i><b>4.1</b> Oryx-MRSI GUI Tutorial</a></li>
+<li class="chapter" data-level="4.2" data-path="applications.html"><a href="applications.html#starting-oryx-mrsi"><i class="fa fa-check"></i><b>4.2</b> Starting Oryx-MRSI</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="output-files.html"><a href="output-files.html"><i class="fa fa-check"></i><b>5</b> Output Files</a></li>
+<li class="chapter" data-level="5" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -122,55 +178,30 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="intro" class="section level1" number="2">
-<h1><span class="header-section-number">Chapter 2</span> Introduction</h1>
-<div id="oryx-mrsi-1" class="section level2" number="2.1">
-<h2><span class="header-section-number">2.1</span> Oryx-MRSI</h2>
-<p><img src="assets/logo.png" style="width:15.0%" /></p>
-<p>Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data. Oryx-MRSI functionality includes chemical shift correction, segmentation, tissue fraction calculation, metabolite maps generation, registration of metabolite maps onto MNI152 brain atlas, and ROI analysis for metabolite concentration and ratio estimation at different brain parcellations.</p>
-<p><a href="https://github.com/sevimcengiz/Oryx-MRSI">Oryx-MRSI Github Repository Link</a></p>
-<p>Oryx-MRSI was programmed in MATLAB 2020a (The Mathworks Inc., Natick, MA).The software asks for some parameters before the data analysis.The user needs to provide parameters for the multi-slice 1H-MRSI data.</p>
-<p>Required parameters:</p>
-<ol style="list-style-type: lower-alpha">
-<li><p>Exclusion criteria for fCSF, SNR, FWHM, CRLB</p></li>
-<li><p>RF bandwidhth of the system for chemical shift correction</p></li>
-<li><p>Cut-off value for the probabilistic binary map after registration</p></li>
-<li><p>Chemical shift correction is <code>On</code> or <code>Off</code></p></li>
-<li><p>RFOV dir is <code>RL</code> or <code>AP</code></p></li>
-<li><p>Chemical shift dir (AP) is <code>A</code> or <code>P</code></p></li>
-<li><p>Chemical shift dir (LR) is <code>L</code> or <code>R</code></p></li>
-<li><p>Chemical shift dir (FH) is <code>F</code> or <code>H</code></p></li>
-<li><p>Reference metabolite</p></li>
-</ol>
-<ul>
-<li><p><code>Load Data</code> Reads the raw 1H-MRSI data and LCModel .coord otput files for raw data and Coord file visualization of spectra.</p></li>
-<li><p><code>Co-registration</code> Coregisters FOV,Press-Box(VOI), all voxels of spectra considering chemical shift correction if chemical shift correction is ‘On.’</p></li>
-<li><p><code>Segmentation</code> Calculation of WM, GM, CSF fractions in each voxel of all metabolites considering chemical shift correction.</p></li>
-<li><p><code>FWHM-SNR</code> Visualization of FWHM and SNR values for all voxels.</p></li>
-<li><p><code>Spectral Quality</code> Visualization of included voxels into the 1H-MRSI data analysis after exclusion criteria values considering FWHM, SNR, CRLB, and fCSF.</p></li>
-<li><p><code>Metabolite Map</code> All metabolite results are used to create metabolite maps including:</p>
-<ul>
-<li>concentration map,</li>
-<li>concentration map to Ins ratio,</li>
-<li>concentration map to Cr+PCr ratio,</li>
-<li>CSF corrected concentration map,</li>
-<li>CSF corrected concentration map to Ins ratio,</li>
-<li>CSF corrected concentration map to Cr+PCr ratio.</li>
-</ul></li>
-<li><p><code>Registration</code> Generates MNI152 brain atlas-Registered metabolite maps including the outputs created in the previous module.</p></li>
-<li><p><code>ROI Analysis</code> Region of interest (ROI) analysis at multiple brain atlases like <a href="https://pubmed.ncbi.nlm.nih.gov/28981612/">Schafer2018 100/400 Parcels on 7 resting-state (rs-fMRI) networks</a> or <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases">MNI thr 0/25/50 brain regions</a>.</p></li>
-</ul>
+<div id="intro" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> Introduction<a href="intro.html#intro" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="oryx-mrsi" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Oryx-MRSI<a href="intro.html#oryx-mrsi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data.</p>
+<div class="figure">
+<img src="assets/Tony.jpg" style="width:50.0%" alt="" />
+<p class="caption">“Tony!”</p>
 </div>
-<div id="release" class="section level2" number="2.2">
-<h2><span class="header-section-number">2.2</span> Release</h2>
+<div class="figure">
+<img src="assets/Tony2.jpg" style="width:50.0%" alt="" />
+<p class="caption">“Tony, Tony!”</p>
+</div>
+</div>
+<div id="release" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> Release<a href="intro.html#release" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Version 1.0</p>
 </div>
-<div id="licencing" class="section level2" number="2.3">
-<h2><span class="header-section-number">2.3</span> Licencing</h2>
-<p>MIT License</p>
+<div id="licencing" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> Licencing<a href="intro.html#licencing" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Apache-2.0 License</p>
 </div>
-<div id="developers" class="section level2" number="2.4">
-<h2><span class="header-section-number">2.4</span> Developers</h2>
+<div id="developers" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> Developers<a href="intro.html#developers" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p>Sevim Cengiz</p></li>
 <li><p>Muhammed Yildirim</p></li>
@@ -178,13 +209,12 @@
 <li><p>Esin Ozturk Isik</p></li>
 </ul>
 <p>Should you publish material that made use of Oryx-MRSI, please cite the following publication:</p>
-<p><strong>Cengiz S, Yildirim M, Bas A, Ozturk-Isik E. ORYX-MRSI: A data analysis software for multi-slice 1H-MRSI. International Society for Magnetic Resonance in Medicine. Virtual Meeting, May 15-20, 2021. (Digital Poster)</strong></p>
+<p>Cengiz S, Yildirim M, Bas A, Ozturk-Isik E. ORYX-MRSI: A data analysis software for multi-slice 1H-MRSI. International Society for Magnetic Resonance in Medicine. Virtual Meeting, May 15-20, 2021. (Digital Poster)</p>
 </div>
-<div id="acknowledgements" class="section level2" number="2.5">
-<h2><span class="header-section-number">2.5</span> Acknowledgements</h2>
+<div id="acknowledgements" class="section level2 hasAnchor" number="2.5">
+<h2><span class="header-section-number">2.5</span> Acknowledgements<a href="intro.html#acknowledgements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
-<li><p>This project was funded by TUBITAK 115S219.</p></li>
-<li><p>We thank all open-source MR and MRS tools.</p></li>
+<li><p>This project was funded by TUBITAK 115S219. We thank all open-source MR and MRS tools.</p></li>
 <li><p>Oryx-MRSI uses some functions of <a href="https://github.com/CIC-methods/FID-A">FID-A</a>, check <a href="https://github.com/CIC-methods/FID-A/blob/master/LICENSE.txt">this link</a> for licence.</p></li>
 <li><p>Oryx-MRSI uses some functions of <a href="https://github.com/richardedden/Gannet3.1">Gannet</a>.</p>
 <ul>
@@ -195,7 +225,7 @@
 <li>G Oeltzschner, HJ Zöllner, SCN Hui, M Mikkelsen, MG Saleh, S Tapper, RAE Edden. Osprey: Open-Source Processing, Reconstruction &amp; Estimation of Magnetic Resonance Spectroscopy Data. J Neurosci Meth 343:108827 (2020).</li>
 </ul></li>
 <li><p>Oryx-MRSI uses some functions of <a href="https://github.com/chenkonturek/MRS_MRI_libs">MRS_MRI_libs</a>, check <a href="https://github.com/chenkonturek/MRS_MRI_libs/blob/master/LICENSE">this link</a> for license.</p></li>
-<li><p>Oryx-MRSI uses some functions of <a href="https://github.com/NIFTI-Imaging/nifti_matlab">NIFTI-Matlab</a>, check <a href="https://github.com/NIFTI-Imaging/nifti_matlab/blob/master/license.txt">this link</a> for licence.</p></li>
+<li><p>Oryx-MRSI uses some functionf of <a href="https://github.com/NIFTI-Imaging/nifti_matlab">NIFTI-Matlab</a>, check <a href="https://github.com/NIFTI-Imaging/nifti_matlab/blob/master/license.txt">this link</a> for licence.</p></li>
 <li><p>Oryx-MRSI uses some functions written by <a href="https://www.mcgill.ca/psychiatry/jamie-near">Jamie Near</a> (McGill University)</p></li>
 <li><p>Oryx-MRSI uses some functions written by <a href="https://www.creatis.insa-lyon.fr/site7/en/users/ratiney">H.Ratiney</a> (CREATIS-LRMN)</p></li>
 <li><p>Oryx-MRSI uses Schaefer2018_100/400Parcels_7Networks_order_FSLMNI152_2mm.nii. See Github <a href="https://github.com/ThomasYeoLab/Standalone_CBIG_fMRI_Preproc2016">link</a>, for <a href="https://github.com/ThomasYeoLab/Standalone_CBIG_fMRI_Preproc2016/blob/master/LICENSE.md">licence</a>.</p></li>
@@ -211,11 +241,10 @@
         </div>
       </div>
 <a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="getting-started.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="methods.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -255,6 +284,10 @@ gitbook.start({
 "text": null
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
@@ -262,6 +295,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

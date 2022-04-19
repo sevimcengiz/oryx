@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Methods | Oryx-MRSI Documentation</title>
   <meta name="description" content="Chapter 3 Methods | Oryx-MRSI Documentation" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Methods | Oryx-MRSI Documentation" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 3 Methods | Oryx-MRSI Documentation" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
 
 
-<meta name="date" content="2021-05-09" />
+<meta name="date" content="2022-04-19" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +32,8 @@
   
 <link rel="prev" href="intro.html"/>
 <link rel="next" href="applications.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,9 +49,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -179,10 +178,10 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="methods" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Methods</h1>
-<div id="requirements" class="section level2" number="3.1">
-<h2><span class="header-section-number">3.1</span> Requirements</h2>
+<div id="methods" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Methods<a href="methods.html#methods" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="requirements" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Requirements<a href="methods.html#requirements" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <ul>
 <li><p><a href="https://www.fil.ion.ucl.ac.uk/spm/software/download/">MATLAB R2020b</a></p></li>
 <li><p><a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSL">FSL</a> for FLIRT</p></li>
@@ -193,8 +192,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor Intel Core i7-9800X CPU <span class="citation">(<a href="#ref-3.8GHzx16" role="doc-biblioref"><strong>3.8GHzx16?</strong></a>)</span>, Graphics GeForce RTX 2070/PCle/SSE2)</p></li>
 </ul>
 </div>
-<div id="install-oryx-mrsi" class="section level2" number="3.2">
-<h2><span class="header-section-number">3.2</span> Install Oryx-MRSI</h2>
+<div id="install-oryx-mrsi" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Install Oryx-MRSI<a href="methods.html#install-oryx-mrsi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p><strong>Oryx-MRSI</strong> uses FSL-Flirt function so using FSL from MATLAB should be ready.</p>
 <p>If you want to install FSL into your computer, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation">this link</a></p>
 <p>If you use <code>MAC</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX">this link</a> (Advance Usage part-Using FSL from MATLAB)</p>
@@ -203,8 +202,8 @@ Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor 
 <p>Please, check <a href="https://github.com/sevimcengiz/Oryx-MRSI">Oryx-MRSI Github Repository</a>.</p>
 <p>Please, clone the repository, or download. See the figure below.</p>
 </div>
-<div id="before-use-oryx-mrsi" class="section level2" number="3.3">
-<h2><span class="header-section-number">3.3</span> Before Use Oryx-MRSI</h2>
+<div id="before-use-oryx-mrsi" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Before Use Oryx-MRSI<a href="methods.html#before-use-oryx-mrsi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Addpath <strong>Oryx-MRSI</strong> with subfolders.</p>
 <p>Addpath <strong>SPM12</strong> with subfolders.</p>
 <p>Please make sure that <strong>FSL</strong> usage from Matlab command window installation is completed properly.</p>
@@ -215,8 +214,8 @@ Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor 
 <p>If you use <code>MAC</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX">this link</a> (Advance Usage part-Using FSL from MATLAB)</p>
 <p>If you use <code>LINUX</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Linux">this link</a> (Using FSL from MATLAB)</p>
 </div>
-<div id="how-to-organize-your-raw-data" class="section level2" number="3.4">
-<h2><span class="header-section-number">3.4</span> How to organize your raw data</h2>
+<div id="how-to-organize-your-raw-data" class="section level2 hasAnchor" number="3.4">
+<h2><span class="header-section-number">3.4</span> How to organize your raw data<a href="methods.html#how-to-organize-your-raw-data" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>If you want to go through with your own data set, the folder of data structure given below will help you.</p>
 <p>There is a <code>dataset</code> folder under <strong>Oryx-MRSI</strong>.</p>
 <p>Each patient should be listed under that folder.</p>
@@ -249,7 +248,6 @@ PatientName_press_1_raw_act_sl1_4-7.table (It shows slice 1, row 4, column 7)</p
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -289,6 +287,10 @@ gitbook.start({
 "text": null
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
