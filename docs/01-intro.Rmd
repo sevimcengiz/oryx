@@ -2,11 +2,57 @@
 
 ## Oryx-MRSI 
 
-Oryx-MRSI is a fully automated software for a comprehensive analysis of multi-slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data. 
+Oryx-MRSI is a fully automated software for a comprehensive analysis of multi- slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data. Oryx- MRSI functionality includes chemical shift correction, segmentation, tissue fraction calculation, metabolite maps generation, registration of metabolite maps onto MNI152 brain atlas, ROI analysis and distributions for metabolite concentration and ratio estimation at different brain.
+
+Oryx-MRSI Github Repository Link
+Oryx-MRSI was programmed in MATLAB 2020a (The Mathworks Inc., Natick, MA).The software asks for some parameters before the data analysis.The user needs to provide parameters for the multi-slice 1H-MRSI data.
+
+```Required parameters:```
+
+a. Exclusion criteria for fCSF, SNR, FWHM, CRLB
+
+b. RF bandwidhth of the system for chemical shift correction
+
+c. Cut-off value for the probabilistic binary map after registration 
+
+d. Chemical shift correction is On or Off
+
+e. RFOV dir is RL or AP
+
+f. Chemical shift dir (AP) is A or P 
+
+g. Chemical shift dir (LR) is L or R 
+
+h. Chemical shift dir (FH) is F or H 
+
+i. Reference metabolite
+
+- ```Load Data``` reads the raw 1H-MRSI data (Spar or MRS-NIfTI file) and LCModel .coord otput files for raw data and Coord file visualization of spectra.
+
+- ```Co-registration``` Coregisters FOV,Press-Box(VOI), all voxels of spectra considering chemical shift correction if chemical shift correction is ‘On’.
+
+- ```Segmentation``` Calculation of WM, GM, CSF fractions in each voxel of all metabolites considering chemical shift correction.
+
+- ```CRLB-FWHM-SNR``` Visualization of CRLB, FWHM and SNR values for all voxels in all views.
+
+- ```Spectral Quality``` Visualization of included voxels into the 1H-MRSI data analysis after exclusion criteria values considering FWHM, SNR, CRLB, and fCSF.
+
+- Metabolite Map All metabolite results are used to create metabolite maps including:
+
+    – concentration map,
+    – concentration map to Ins ratio,
+    – concentration map to Cr+PCr ratio,
+    – CSF corrected concentration map,
+    – CSF corrected concentration map to Ins ratio,
+    – CSF corrected concentration map to Cr+PCr ratio.
+
+- Registration Generates MNI152 brain atlas-Registered metabolite maps including the outputs created in the previous module.
+
+- ROI Analysis Region of interest (ROI) analysis at multiple brain atlases like Schafer2018 100/400 Parcels on 7 resting-state (rs-fMRI) networks or MNI thr 0/25/50 brain regions.
 
 ## Release 
 
-Version 1.0
+Version 1.1
 
 ## Licencing 
 
@@ -24,12 +70,18 @@ Apache-2.0 License
 
 Should you publish material that made use of Oryx-MRSI, please cite the following publication:
 
+ORYX-MRSI: A Fully-Automated Open-Source Software for Three-Dimensional Proton Magnetic Resonance Spectroscopic Imaging Data Analysis
+Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk-Isik
+bioRxiv 2021.11.12.468398; doi: https://doi.org/10.1101/2021.11.12.468398
+
 Cengiz S, Yildirim M, Bas A, Ozturk-Isik E. ORYX-MRSI: A data analysis software for multi-slice 1H-MRSI. International Society for Magnetic Resonance in Medicine. Virtual Meeting, May 15-20, 2021.  (Digital Poster)
 
 
 ## Acknowledgements
 
-- This project was funded by TUBITAK 115S219. We thank all open-source MR and MRS tools.
+- This project was funded by TUBITAK 115S219. 
+
+- We thank all open-source MR and MRS tools.
 
 - Oryx-MRSI uses some functions of [FID-A](https://github.com/CIC-methods/FID-A), check [this link](https://github.com/CIC-methods/FID-A/blob/master/LICENSE.txt) for licence.
 
@@ -52,6 +104,8 @@ Cengiz S, Yildirim M, Bas A, Ozturk-Isik E. ORYX-MRSI: A data analysis software 
 - Oryx-MRSI uses Schaefer2018_100/400Parcels_7Networks_order_FSLMNI152_2mm.nii. See Github [link](https://github.com/ThomasYeoLab/Standalone_CBIG_fMRI_Preproc2016), for [licence](https://github.com/ThomasYeoLab/Standalone_CBIG_fMRI_Preproc2016/blob/master/LICENSE.md).
 
 - Oryx-MRSI uses MNI152_T1_2mm_brain.nii.gz, MNI-maxprob-thr0/25/50-2mm.nii.gz acquired from [FSL](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases), for [licence](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Licence). 
+
+- Oryx-MRSI uses [nifti-mrs-matlab](https://github.com/schorschinho/nifti-mrs-matlab), for [licence](https://github.com/schorschinho/nifti-mrs-matlab/blob/main/LICENSE)
 
 - If there is any function that I forget to mention about name/link/citation, please let me know.
 

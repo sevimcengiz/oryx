@@ -1,4 +1,4 @@
-# Methods
+# Getting started
 
 ## Requirements
 
@@ -30,6 +30,7 @@ Plase download SPM12 using [this link](https://www.fil.ion.ucl.ac.uk/spm/softwar
 Please, check [Oryx-MRSI Github Repository]( https://github.com/sevimcengiz/Oryx-MRSI).
 
 Please, clone the repository, or download. See the figure below. 
+
 
 ## Before Use Oryx-MRSI
 
