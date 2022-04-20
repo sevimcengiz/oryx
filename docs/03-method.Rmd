@@ -40,7 +40,7 @@ Provide information for the chemical shift correction. (Recommended is ON if you
 If chemical shift correction is on, please provide information shown
 in the figure.
 
-![](assets/F13.png){width=30%}
+![](assets/F13.png){width=20%}
 
 Please, select reference metabolite for chemical shift correction.
 
@@ -68,7 +68,7 @@ This module reads the raw 1H-MRSI data, LCModel .coord output files, and allows 
 
 Click, for the magnification of the selected spectra.
 
-![](assets/F19.png){width=80%}
+![](assets/F19.png){width=30%}
 
 ## Co-registration Module
 
@@ -98,14 +98,16 @@ This module displays voxels included in the 1H-MRSI data analysis for each metab
 
 The LCModel .table files are parsed using a text reader and each metabolite result is positioned into a 3D grid in accordance with the MR image space data to create several maps, which are the concentration, CSF corrected concentra- tion (C=C0*(1/(1-fCSF))), and concentration or CSF corrected concentration to Ins and Cr+PCr ratio maps. Currently, these maps are created for nine dif- ferent metabolites, which are Cr+PCr, Glu+Gln, GPC+PCh, Ins, Lac, Lip13a, Lip13b, Lip13a+Lip13b.
 
-![](assets/F23.png){width=80%}
+![](assets/F24.png){width=80%}
 
 ## Registration Module
 
 This modules registers the reference anatomical MRI onto MNI152 brain at- las using FMRIB’s Linear Image Registration Tool (FSL FLIRT) to obtain a transformation matrix. Then, this transformation matrix is used to register the PRESS box and all the concentration or ratio maps that were previously co-registered to the anatomical MRI onto the MNI152 brain atlas. The user pro- vides a cutoff value for the probabilistic maps, (at the main page), which are produced as a result of registration, and all the pixels that exceed this threshold are included in the data analysis.
 
-![](assets/F24.png){width=80%}
+![](assets/F25.png){width=80%}
 
 ## ROI Analysis
 
 The metabolic maps are currently evaluated at different brain regions to define a mean, median and standard deviation value of the concentration map of interest at these brain regions. A result is produced for a parcellation if only more than provided value at the ROI Analyze page% of its pixels are included within the metabolite map of interest.
+
+![](assets/F26.png){width=80%}
