@@ -15,7 +15,7 @@ starting-oryx-mrsi
 load-module
 co-registration-module
 segmentation-module
-fwhm-snr-module
+crlb-fwhm-snr-module
 spectral-quality-module
 metabolite-map-module
 registration-module
