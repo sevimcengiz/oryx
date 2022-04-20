@@ -156,7 +156,7 @@ Click the select .spar file button ,and open dataset folder under Oryx-MRSI repo
 <p><img src="assets/F12.png" style="width:30.0%" /></p>
 <p>If chemical shift correction is on, please provide information shown
 in the figure.</p>
-<p><img src="assets/F13.png" style="width:30.0%" /></p>
+<p><img src="assets/F13.png" style="width:20.0%" /></p>
 <p>Please, select reference metabolite for chemical shift correction.</p>
 <p><img src="assets/F14.png" style="width:30.0%" /></p>
 <p>Please, provide cut-off values for automated spectral quality.</p>
@@ -172,7 +172,7 @@ in the figure.</p>
 <p><img src="assets/F17.png" style="width:80.0%" /></p>
 <p><img src="assets/F18.png" style="width:80.0%" /></p>
 <p>Click, for the magnification of the selected spectra.</p>
-<p><img src="assets/F19.png" style="width:80.0%" /></p>
+<p><img src="assets/F19.png" style="width:30.0%" /></p>
 </div>
 <div id="co-registration-module" class="section level2 hasAnchor" number="4.3">
 <h2><span class="header-section-number">4.3</span> Co-registration Module<a href="oryx-mrsi-gui-tutorial.html#co-registration-module" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -197,16 +197,17 @@ in the figure.</p>
 <div id="metabolite-map-module" class="section level2 hasAnchor" number="4.7">
 <h2><span class="header-section-number">4.7</span> Metabolite Map Module<a href="oryx-mrsi-gui-tutorial.html#metabolite-map-module" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The LCModel .table files are parsed using a text reader and each metabolite result is positioned into a 3D grid in accordance with the MR image space data to create several maps, which are the concentration, CSF corrected concentra- tion (C=C0*(1/(1-fCSF))), and concentration or CSF corrected concentration to Ins and Cr+PCr ratio maps. Currently, these maps are created for nine dif- ferent metabolites, which are Cr+PCr, Glu+Gln, GPC+PCh, Ins, Lac, Lip13a, Lip13b, Lip13a+Lip13b.</p>
-<p><img src="assets/F23.png" style="width:80.0%" /></p>
+<p><img src="assets/F24.png" style="width:80.0%" /></p>
 </div>
 <div id="registration-module" class="section level2 hasAnchor" number="4.8">
 <h2><span class="header-section-number">4.8</span> Registration Module<a href="oryx-mrsi-gui-tutorial.html#registration-module" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>This modules registers the reference anatomical MRI onto MNI152 brain at- las using FMRIB’s Linear Image Registration Tool (FSL FLIRT) to obtain a transformation matrix. Then, this transformation matrix is used to register the PRESS box and all the concentration or ratio maps that were previously co-registered to the anatomical MRI onto the MNI152 brain atlas. The user pro- vides a cutoff value for the probabilistic maps, (at the main page), which are produced as a result of registration, and all the pixels that exceed this threshold are included in the data analysis.</p>
-<p><img src="assets/F24.png" style="width:80.0%" /></p>
+<p><img src="assets/F25.png" style="width:80.0%" /></p>
 </div>
 <div id="roi-analysis" class="section level2 hasAnchor" number="4.9">
 <h2><span class="header-section-number">4.9</span> ROI Analysis<a href="oryx-mrsi-gui-tutorial.html#roi-analysis" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>The metabolic maps are currently evaluated at different brain regions to define a mean, median and standard deviation value of the concentration map of interest at these brain regions. A result is produced for a parcellation if only more than provided value at the ROI Analyze page% of its pixels are included within the metabolite map of interest.</p>
+<p><img src="assets/F26.png" style="width:80.0%" /></p>
 
 </div>
 </div>
