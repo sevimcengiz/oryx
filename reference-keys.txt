@@ -10,7 +10,10 @@ requirements
 install-oryx-mrsi
 before-use-oryx-mrsi
 how-to-organize-your-raw-data
-applications
 oryx-mrsi-gui-tutorial
 starting-oryx-mrsi
+load-module
+applications
+oryx-mrsi-gui-tutorial-1
+starting-oryx-mrsi-1
 final-words
