@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 3 Literature | Oryx-MRSI Documentation</title>
   <meta name="description" content="Chapter 3 Literature | Oryx-MRSI Documentation" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 3 Literature | Oryx-MRSI Documentation" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 3 Literature | Oryx-MRSI Documentation" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
 
 
-<meta name="date" content="2021-05-09" />
+<meta name="date" content="2022-04-20" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,8 +32,8 @@
   
 <link rel="prev" href="intro.html"/>
 <link rel="next" href="methods.html"/>
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,9 +49,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -134,7 +133,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">A Minimal Book Example</a></li>
+<li><a href="./">Oryx-MRSI Documentation</a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
@@ -181,8 +180,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="literature" class="section level1" number="3">
-<h1><span class="header-section-number">Chapter 3</span> Literature</h1>
+<div id="literature" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Literature<a href="literature.html#literature" class="anchor-section" aria-label="Anchor link to header"></a></h1>
 <p>This is the user documentation for Oryx-MRSI, the fully-automated open-source software for post-processing and clinic analysis of in-vivo multi-slice magnetic resonance spectroscopic imaging (MRSI). It doesn’t require high MRS experience from the user. Oryx-MRSI uses 1H-MRSI data acquired from Philips MR Scanner and anatomical images of different Magnetic Resonance Image (MRI) modalities including (T1 weighted MRI (T1w-MRI), T2 weighted MRI (T2w-MRI). Example datasets included .sdat &amp; .spar of MRSI, and T1w-MRI and T2w-MRI were shared in Github repository (1 control, 1 parkinson’s disease, 4 different phantom acquisition trials for chemical shift). If you want to use this toolbox with your own data set, kindly check the last page to see data structure.</p>
 
 </div>
@@ -196,7 +195,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -236,6 +234,10 @@ gitbook.start({
 "text": null
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }

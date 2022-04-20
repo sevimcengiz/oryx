@@ -5,6 +5,7 @@ release
 licencing
 developers
 acknowledgements
+literature
 methods
 requirements
 install-oryx-mrsi
