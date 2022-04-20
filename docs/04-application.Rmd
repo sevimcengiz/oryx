@@ -1,32 +1,15 @@
-# Applications
+# Output Files
 
-## Oryx-MRSI GUI Tutorial
+A folder named nifti will be created after the analysis. 
 
-This tutorial describes each step of the Oryx-MRSI analysis workflow using the graphical user interface.
-We will learn how to start the GUI, select the spar file, select requirements information an the Main Gui Page and it will enables us to use 8 different modules. 
+It includes all spectral volumes.
 
-## Starting Oryx-MRSI
+![](assets/F27.png){width=80%}
 
-Please, make sure that SPM12 and ORYX-MRSI folders in the addpath with subfolders. (For more information, see this(link))
-Please, make sure that FSL command can be used via Matlab and run ```check_fsl_usage_from_matlab.m``` (For more information, see this(link))
+FSLeyes link is suggested for nifti file visualization.
 
-Let’s start with Oryx-MRSI.
+A folder named outputs will include all excell files after ROI Analysis.
 
-At the MATLAB prompt, enter
->>> Oryx
-
-It will display the Oryx-MRSI main Page.
-
-Selecting data and providing information. 
-
-Click the ```select Spar or MRS-NIfTI file``` button , open dataset folder under Oryx-MRSI repository in your drive. Choose an example dataset or select your own dataset (Please, follow the steps at here (link)).
-
-Provide information for MRSI acquisition after T1w-MRI or T2w-MRI. 
-
-Provide information for the chemical shift correction. (Recommended is ON if you have the system RF bandwidths information)
-
-If chemical shift correction is on, please provide information shown in the figure. 
-
-
+![](assets/F28.png){width=80%}
 
  

@@ -111,3 +111,10 @@ This modules registers the reference anatomical MRI onto MNI152 brain at- las us
 The metabolic maps are currently evaluated at different brain regions to define a mean, median and standard deviation value of the concentration map of interest at these brain regions. A result is produced for a parcellation if only more than provided value at the ROI Analyze page% of its pixels are included within the metabolite map of interest.
 
 ![](assets/F26.png){width=80%}
+
+## Distributions
+
+This module shows a box plot of a selected metabolite’s distribution at a selected region for a visual assessment.
+
+![](assets/F29.png){width=80%}
+
