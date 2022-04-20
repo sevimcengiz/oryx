@@ -82,7 +82,7 @@ After white matter (WM), gray matter (GM), and cerebrospinal fluid (CSF) are seg
 
 ![](assets/F21.png){width=80%}
 
-## FWHM & SNR Module
+## CRLB & FWHM & SNR Module
 
 This module reads LCModel .table files to get FWHM and SNR values of each voxel to create and visualize multivoxel FWHM and SNR maps.
 

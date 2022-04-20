@@ -31,7 +31,7 @@ Please, check [Oryx-MRSI Github Repository]( https://github.com/sevimcengiz/Oryx
 
 Please, clone the repository, or download. See the figure below. 
 
-![](assets/F1.png){width=100%}
+![](assets/F1.png){width=40%}
 
 
 ## Before Use Oryx-MRSI
@@ -40,7 +40,7 @@ Addpath **Oryx-MRSI** with subfolders.
 
 Addpath **SPM12** with subfolders.
 
-![](assets/F2.png){width=40%}
+![](assets/F2.png){width=60%}
 
 
 Please make sure that **FSL** usage from Matlab command window installation is completed properly.
