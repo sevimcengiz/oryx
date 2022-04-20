@@ -6,7 +6,7 @@ licencing
 developers
 acknowledgements
 literature
-methods
+getting-started
 requirements
 install-oryx-mrsi
 before-use-oryx-mrsi
