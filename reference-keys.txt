@@ -22,4 +22,3 @@ registration-module
 roi-analysis
 distributions
 output-files
-final-words
