@@ -13,6 +13,13 @@ how-to-organize-your-raw-data
 oryx-mrsi-gui-tutorial
 starting-oryx-mrsi
 load-module
+co-registration-module
+segmentation-module
+fwhm-snr-module
+spectral-quality-module
+metabolite-map-module
+registration-module
+roi-analysis
 applications
 oryx-mrsi-gui-tutorial-1
 starting-oryx-mrsi-1
