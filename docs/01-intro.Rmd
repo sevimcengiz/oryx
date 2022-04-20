@@ -2,6 +2,8 @@
 
 ## Oryx-MRSI 
 
+!["Oryx-logo"](assets/logo.png){width=50%}
+
 Oryx-MRSI is a fully automated software for a comprehensive analysis of multi- slice proton magnetic resonance spectroscopic imaging (1H-MRSI) data. Oryx- MRSI functionality includes chemical shift correction, segmentation, tissue fraction calculation, metabolite maps generation, registration of metabolite maps onto MNI152 brain atlas, ROI analysis and distributions for metabolite concentration and ratio estimation at different brain.
 
 Oryx-MRSI Github Repository Link
