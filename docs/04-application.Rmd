@@ -4,12 +4,12 @@ A folder named nifti will be created after the analysis.
 
 It includes all spectral volumes.
 
-![](assets/F27.png){width=80%}
+![](assets/F27.png){width=40%}
 
 FSLeyes link is suggested for nifti file visualization.
 
 A folder named outputs will include all excell files after ROI Analysis.
 
-![](assets/F28.png){width=80%}
+![](assets/F28.png){width=60%}
 
  
