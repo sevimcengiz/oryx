@@ -20,7 +20,6 @@ spectral-quality-module
 metabolite-map-module
 registration-module
 roi-analysis
-applications
-oryx-mrsi-gui-tutorial-1
-starting-oryx-mrsi-1
+distributions
+output-files
 final-words

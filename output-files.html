@@ -6,11 +6,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Chapter 5 Output Files | Oryx-MRSI Documentation</title>
   <meta name="description" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
-  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
 
   <meta property="og:title" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   <meta property="og:type" content="book" />
-  
   
   <meta property="og:description" content="Chapter 5 Output Files | Oryx-MRSI Documentation" />
   <meta name="github-repo" content="rstudio/bookdown-demo" />
@@ -24,7 +23,7 @@
 <meta name="author" content="Sevim Cengiz, Muhammed Yildirim, Abdullah Bas, Esin Ozturk Isik" />
 
 
-<meta name="date" content="2021-05-10" />
+<meta name="date" content="2022-04-21" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,9 +31,9 @@
   
   
 <link rel="prev" href="oryx-mrsi-gui-tutorial.html"/>
-
-<script src="libs/header-attrs-2.8/header-attrs.js"></script>
-<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link rel="next" href="final-words.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -50,9 +49,9 @@
 
 
 
-
-<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
 
 
 
@@ -73,10 +72,10 @@
 <li><a href="./">Oryx-MRSI Documentation</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
 <li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Introduction</a>
 <ul>
-<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#oryx-mrsi-1"><i class="fa fa-check"></i><b>2.1</b> Oryx-MRSI</a></li>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#oryx-mrsi"><i class="fa fa-check"></i><b>2.1</b> Oryx-MRSI</a></li>
 <li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#release"><i class="fa fa-check"></i><b>2.2</b> Release</a></li>
 <li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#licencing"><i class="fa fa-check"></i><b>2.3</b> Licencing</a></li>
 <li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#developers"><i class="fa fa-check"></i><b>2.4</b> Developers</a></li>
@@ -95,13 +94,16 @@
 <li class="chapter" data-level="4.2" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#load-module"><i class="fa fa-check"></i><b>4.2</b> Load Module</a></li>
 <li class="chapter" data-level="4.3" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#co-registration-module"><i class="fa fa-check"></i><b>4.3</b> Co-registration Module</a></li>
 <li class="chapter" data-level="4.4" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#segmentation-module"><i class="fa fa-check"></i><b>4.4</b> Segmentation Module</a></li>
-<li class="chapter" data-level="4.5" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#fwhm-snr-module"><i class="fa fa-check"></i><b>4.5</b> FWHM &amp; SNR Module</a></li>
+<li class="chapter" data-level="4.5" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#crlb-fwhm-snr-module"><i class="fa fa-check"></i><b>4.5</b> CRLB &amp; FWHM &amp; SNR Module</a></li>
 <li class="chapter" data-level="4.6" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#spectral-quality-module"><i class="fa fa-check"></i><b>4.6</b> Spectral Quality Module</a></li>
 <li class="chapter" data-level="4.7" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#metabolite-map-module"><i class="fa fa-check"></i><b>4.7</b> Metabolite Map Module</a></li>
 <li class="chapter" data-level="4.8" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#registration-module"><i class="fa fa-check"></i><b>4.8</b> Registration Module</a></li>
 <li class="chapter" data-level="4.9" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#roi-analysis"><i class="fa fa-check"></i><b>4.9</b> ROI Analysis</a></li>
+<li class="chapter" data-level="4.10" data-path="oryx-mrsi-gui-tutorial.html"><a href="oryx-mrsi-gui-tutorial.html#distributions"><i class="fa fa-check"></i><b>4.10</b> Distributions</a></li>
 </ul></li>
 <li class="chapter" data-level="5" data-path="output-files.html"><a href="output-files.html"><i class="fa fa-check"></i><b>5</b> Output Files</a></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
 
@@ -122,14 +124,14 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="output-files" class="section level1" number="5">
-<h1><span class="header-section-number">Chapter 5</span> Output Files</h1>
-<p>A folder named <code>nifti</code> will be created after the analysis.</p>
+<div id="output-files" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Chapter 5</span> Output Files<a href="output-files.html#output-files" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>A folder named nifti will be created after the analysis.</p>
 <p>It includes all spectral volumes.</p>
-<p><img src="assets/folders.png" style="width:40.0%" /></p>
-<p><strong>FSLeyes</strong> <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes">link</a> is suggested for nifti file visualization.</p>
-<p>A folder named <code>outputs</code> will include all excell files after ROI Analysis.</p>
-<p><img src="assets/excels.png" style="width:60.0%" /></p>
+<p><img src="assets/F27.png" style="width:80.0%" /></p>
+<p>FSLeyes link is suggested for nifti file visualization.</p>
+<p>A folder named outputs will include all excell files after ROI Analysis.</p>
+<p><img src="assets/F28.png" style="width:80.0%" /></p>
 
 </div>
             </section>
@@ -137,12 +139,11 @@
           </div>
         </div>
       </div>
-<a href="oryx-mrsi-gui-tutorial.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="oryx-mrsi-gui-tutorial.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="final-words.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
-<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
@@ -170,7 +171,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/05-summary.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-application.Rmd",
 "text": "Edit"
 },
 "history": {
@@ -182,6 +183,10 @@ gitbook.start({
 "text": null
 },
 "download": ["bookdown-demo.pdf", "bookdown-demo.epub"],
+"search": {
+"engine": "fuse",
+"options": null
+},
 "toc": {
 "collapse": "subsection"
 }
