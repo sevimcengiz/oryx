@@ -149,13 +149,13 @@ Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor 
 <h2><span class="header-section-number">3.3</span> Before Use Oryx-MRSI<a href="getting-started.html#before-use-oryx-mrsi" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Addpath <strong>Oryx-MRSI</strong> with subfolders.</p>
 <p>Addpath <strong>SPM12</strong> with subfolders.</p>
-<p><img src="assets/F2.png" style="width:100.0%" /></p>
+<p><img src="assets/F2.png" style="width:40.0%" /></p>
 <p>Please make sure that <strong>FSL</strong> usage from Matlab command window installation is completed properly.</p>
 <p>Before running a data analysis using <strong>Oryx-MRSI</strong>, let’s check that FSL usage is from Matlab is done.</p>
 <p>Please open matlab and run <code>check_fsl_usage_from_matlab.m</code> script which is given under <strong>Oryx-MRSI</strong> Github repo.</p>
 <p>If there is no error, FSL usage from Matlab is completely installed.</p>
 <p>If you get an error, plese check these:</p>
-<p>If you use <code>MAC</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX">this link</a> (Advance Usage part-Using FSL from MATLAB)</p>
+<p>If you use <code>MAC</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/%20FslInstallation/MacOsX">this link</a> (Advance Usage part-Using FSL from MATLAB)</p>
 <p>If you use <code>LINUX</code>, check <a href="https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Linux">this link</a> (Using FSL from MATLAB)</p>
 </div>
 <div id="how-to-organize-your-raw-data" class="section level2 hasAnchor" number="3.4">
@@ -164,26 +164,36 @@ Intel HD Graphics 630 1536 MB ) and Ubuntu 18.04.4 LTS (Memory 32GIB, Processor 
 <p>There is a <code>dataset</code> folder under <strong>Oryx-MRSI</strong>.</p>
 <p>Each patient should be listed under that folder.</p>
 <p>Each patient should have T1w-MRI, T2w-MRI or both.<br />
-If you have T1w-MRI,
-~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T1/nifti/ PatientName_Bet.nii.gz</p>
+If you have T1w-MRI,</p>
+<ul>
+<li>~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T1/nifti/ PatientName_Bet.nii.gz</li>
+</ul>
 <p><img src="assets/F3.png" style="width:100.0%" /></p>
-<p>If you have T2w-MRI,
-~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T2/nifti/ PatientName_Bet.nii.gz</p>
+<p>If you have T2w-MRI,</p>
+<ul>
+<li>~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T2/nifti/ PatientName_Bet.nii.gz</li>
+</ul>
 <p><img src="assets/F4.png" style="width:100.0%" /></p>
 <p>You need Spar/MRS-NIfTI data and LCModel outputs.</p>
 <p>For spectra,
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/example-MRS.nii
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.sdat
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.spar
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.sdat
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.spar</p>
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/example-MRS.nii</p>
+<ul>
+<li><p>~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.sdat</p></li>
+<li><p>~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.spar</p></li>
+<li><p>~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.sdat</p></li>
+<li><p>~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.spar</p></li>
+</ul>
 <p><img src="assets/F5.png" style="width:100.0%" /></p>
-<p>For LCModel outputs at press_1;
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/lcmodel_outputs/PatientName_press_1_raw_act/</p>
+<p>For LCModel outputs at press_1;</p>
+<ul>
+<li>~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/lcmodel_outputs/PatientName_press_1_raw_act/</li>
+</ul>
 <p><img src="assets/F6.png" style="width:100.0%" /></p>
-<p>Each folder has to have .coord and .table files. They need to be named as;
-PatientName_press_1_raw_act_sl1_4-7.coord (It shows slice 1, row 4, column 7)
-PatientName_press_1_raw_act_sl1_4-7.table (It shows slice 1, row 4, column 7)</p>
+<p>Each folder has to have .coord and .table files. They need to be named as;</p>
+<ul>
+<li><p>PatientName_press_1_raw_act_sl1_4-7.coord (It shows slice 1, row 4, column 7)</p></li>
+<li><p>PatientName_press_1_raw_act_sl1_4-7.table (It shows slice 1, row 4, column 7)</p></li>
+</ul>
 <p><img src="assets/F7.png" style="width:100.0%" /></p>
 
 </div>
