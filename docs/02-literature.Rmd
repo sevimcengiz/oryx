@@ -40,7 +40,7 @@ Addpath **Oryx-MRSI** with subfolders.
 
 Addpath **SPM12** with subfolders.
 
-![](assets/F2.png){width=100%}
+![](assets/F2.png){width=40%}
 
 
 Please make sure that **FSL** usage from Matlab command window installation is completed properly.
@@ -53,7 +53,8 @@ If there is no error, FSL usage from Matlab is completely installed.
 
 If you get an error, plese check these:
 
-   If you use ```MAC```, check [this link](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/MacOsX) (Advance Usage part-Using FSL from MATLAB)
+   If you use ```MAC```, check [this link](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/
+   FslInstallation/MacOsX) (Advance Usage part-Using FSL from MATLAB)
     
    If you use ```LINUX```, check [this link](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FslInstallation/Linux) (Using FSL from MATLAB)
 
@@ -67,34 +68,43 @@ Each patient should be listed under that folder.
 
 Each patient should have T1w-MRI, T2w-MRI or both.  
 If you have T1w-MRI,
-~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T1/nifti/ PatientName_Bet.nii.gz
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T1/nifti/ PatientName_Bet.nii.gz
 
 ![](assets/F3.png){width=100%}
 
 If you have T2w-MRI,
-~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T2/nifti/ PatientName_Bet.nii.gz
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/images/T2/nifti/ PatientName_Bet.nii.gz
 
 ![](assets/F4.png){width=100%}
 
 You need Spar/MRS-NIfTI data and LCModel outputs.
 
 For spectra,
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/example-MRS.nii
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.sdat
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.spar
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.sdat
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.spar
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/example-MRS.nii
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.sdat
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_act.spar
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.sdat
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/PatientName_press_1_raw_ref.spar
 
 ![](assets/F5.png){width=100%}
 
 For LCModel outputs at press_1;
-~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/lcmodel_outputs/PatientName_press_1_raw_act/
+
+- ~/Oryx-MRSI/Dataset/PatientName/exam_1/spectra/lcmodel_outputs/PatientName_press_1_raw_act/
 
 ![](assets/F6.png){width=100%}
 
 Each folder has to have .coord and .table files. They need to be named as;
-PatientName_press_1_raw_act_sl1_4-7.coord (It shows slice 1, row 4, column 7)
-PatientName_press_1_raw_act_sl1_4-7.table (It shows slice 1, row 4, column 7)
+
+- PatientName_press_1_raw_act_sl1_4-7.coord (It shows slice 1, row 4, column 7)
+
+- PatientName_press_1_raw_act_sl1_4-7.table (It shows slice 1, row 4, column 7)
 
 ![](assets/F7.png){width=100%}
 
